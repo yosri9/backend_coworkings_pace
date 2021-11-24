@@ -1,0 +1,51 @@
+{
+  "kind": "collectionType",
+  "collectionName": "coworking_spaces",
+  "info": {
+    "name": "CoworkingSpace"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    },
+    "video": {
+      "type": "string"
+    },
+    "chair_number": {
+      "type": "integer"
+    },
+    "table_number": {
+      "type": "integer"
+    },
+    "rating": {
+      "type": "decimal"
+    },
+    "phone": {
+      "type": "integer"
+    },
+    "description": {
+      "type": "text"
+    },
+    "products": {
+      "via": "coworking_space",
+      "collection": "product"
+    },
+    "feedbacks": {
+      "via": "coworking_space",
+      "collection": "feedback"
+    },
+    "images": {
+      "via": "coworking_space",
+      "collection": "image"
+    }
+  }
+}

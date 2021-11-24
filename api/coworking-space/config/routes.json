@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/coworking-spaces",
+      "handler": "coworking-space.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/coworking-spaces/count",
+      "handler": "coworking-space.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/coworking-spaces/:id",
+      "handler": "coworking-space.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/coworking-spaces",
+      "handler": "coworking-space.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/coworking-spaces/:id",
+      "handler": "coworking-space.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/coworking-spaces/:id",
+      "handler": "coworking-space.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

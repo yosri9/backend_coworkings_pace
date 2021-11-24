@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "feedbacks",
+  "info": {
+    "name": "Feedback"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "review": {
+      "type": "text"
+    },
+    "rating": {
+      "type": "decimal"
+    },
+    "coworking_space": {
+      "model": "coworking-space",
+      "via": "feedbacks"
+    }
+  }
+}
